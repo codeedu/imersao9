@@ -1,8 +1,8 @@
 package domain
 
-import (
-	uuid "github.com/satori/go.uuid"
+import(
 	"time"
+	uuid "github.com/sartori/go.uuid"
 )
 
 type TransactionRepository interface {
@@ -12,20 +12,21 @@ type TransactionRepository interface {
 }
 
 type Transaction struct {
-	ID           string
-	Amount       float64
-	Status       string
-	Description  string
-	Store        string
+	ID string
+	Amount float64
+	Status string
+	Description string
+	Store string
 	CreditCardId string
-	CreatedAt    time.Time
+	CreatedAt time.Time
+
 }
 
 func NewTransaction() *Transaction {
 	t := &Transaction{}
 	t.ID = uuid.NewV4().String()
 	t.CreatedAt = time.Now()
-	return t
+	return c
 }
 
 func (t *Transaction) ProcessAndValidate(creditCard *CreditCard) {

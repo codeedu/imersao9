@@ -3,9 +3,9 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"github.com/codeedu/codebank/domain"
-	"github.com/codeedu/codebank/infrastructure/repository"
-	"github.com/codeedu/codebank/usecase"
+	"github.com/wilianwatanabe/codebank/domain"
+	"github.com/wilianwatanabe/codebank/infrastructure/repository"
+	"github.com/wilianwatanabe/codebank/usecase"
 	_ "github.com/lib/pq"
 	"log"
 )
